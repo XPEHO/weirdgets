@@ -62,14 +62,14 @@ class _MyHomePageState extends State<MyHomePage> {
     // than having to individually change instances of widgets.
     return Scaffold(
       appBar: AppBar(
-        title: const Text("MyComponents"),
+        title: const Text("Weirdgets"),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Text(
-              'Choose a component',
+              'Choose a weirdget',
             ),
             const SizedBox(
               height: 12,
