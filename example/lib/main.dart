@@ -1,4 +1,5 @@
 import 'package:example/view/diagonal_page/diagonal_page.dart';
+import 'package:example/view/multiggle_page/multiggle_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -28,6 +29,7 @@ class MyApp extends StatelessWidget {
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
       routes: {
         DiagonalPage.routeName: (context) => const DiagonalPage(),
+        MultigglePage.routeName: (context) => const MultigglePage(),
       },
     );
   }
@@ -83,6 +85,23 @@ class _MyHomePageState extends State<MyHomePage> {
               onPressed: () => Navigator.of(context).pushNamed("/diagonal"),
               child: const Text(
                 "Diagonal",
+                style: TextStyle(
+                  fontSize: 12,
+                ),
+              ),
+            ),
+            const SizedBox(
+              height: 12,
+            ),
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(4)),
+                primary: Colors.grey,
+              ),
+              onPressed: () => Navigator.of(context).pushNamed("/multiggle"),
+              child: const Text(
+                "Multiggle",
                 style: TextStyle(
                   fontSize: 12,
                 ),
