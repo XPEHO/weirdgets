@@ -1,5 +1,7 @@
 import 'package:example/view/diagonal_page/diagonal_page.dart';
 import 'package:example/view/multiggle_page/multiggle_page.dart';
+import 'package:example/view/reverted_textfield/reverted_textfield_page.dart';
+import 'package:example/view/upside_down_textfield/upside_down_textfield_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -30,6 +32,10 @@ class MyApp extends StatelessWidget {
       routes: {
         DiagonalPage.routeName: (context) => const DiagonalPage(),
         MultigglePage.routeName: (context) => const MultigglePage(),
+        RevertedTextfieldPage.routeName: (context) =>
+            const RevertedTextfieldPage(),
+        UpsideDownTextfieldPage.routeName: (context) =>
+            const UpsideDownTextfieldPage(),
       },
     );
   }
@@ -102,6 +108,42 @@ class _MyHomePageState extends State<MyHomePage> {
               onPressed: () => Navigator.of(context).pushNamed("/multiggle"),
               child: const Text(
                 "Multiggle",
+                style: TextStyle(
+                  fontSize: 12,
+                ),
+              ),
+            ),
+            const SizedBox(
+              height: 12,
+            ),
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(4)),
+                primary: Colors.grey,
+              ),
+              onPressed: () =>
+                  Navigator.of(context).pushNamed("/revertedTextField"),
+              child: const Text(
+                "Reverted textfield",
+                style: TextStyle(
+                  fontSize: 12,
+                ),
+              ),
+            ),
+            const SizedBox(
+              height: 12,
+            ),
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(4)),
+                primary: Colors.grey,
+              ),
+              onPressed: () =>
+                  Navigator.of(context).pushNamed("/upsideDownTextField"),
+              child: const Text(
+                "Upside down textfield",
                 style: TextStyle(
                   fontSize: 12,
                 ),
