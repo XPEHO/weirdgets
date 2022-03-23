@@ -13,7 +13,7 @@ class RadioButtonPage extends StatelessWidget {
       ),
       body: const Center(
         child: RadioButton(
-          {
+          radios: {
             "NRJ":
                 "http://scdn.nrjaudio.fm/adwz2/fr/30001/mp3_128.mp3?origine=fluxradios",
             "Virgin": "https://ais-live.cloud-services.paris:8443/virgin.mp3",
