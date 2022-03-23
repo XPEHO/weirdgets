@@ -1,7 +1,7 @@
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 
-/// The radio button is a widget that allow the user to listen a radio by pression a button.
+/// The radio button is a widget that allow the user to listen a radio by pressing a button.
 /// You can specify the radio you want to listen with the corresponding url.
 class RadioButton extends StatefulWidget {
   /// The map of radio-url you want to listen to.
