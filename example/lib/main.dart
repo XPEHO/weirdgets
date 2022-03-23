@@ -1,6 +1,7 @@
 import 'package:example/view/diagonal_page/diagonal_page.dart';
 import 'package:example/view/jaimpamaggle_page/jaimpamaggle_page.dart';
 import 'package:example/view/multiggle_page/multiggle_page.dart';
+import 'package:example/view/radio_button_page/radio_button_page.dart';
 import 'package:example/view/reverted_textfield/reverted_textfield_page.dart';
 import 'package:example/view/upside_down_textfield/upside_down_textfield_page.dart';
 import 'package:example/view/troggle_page/troggle_page.dart';
@@ -40,6 +41,7 @@ class MyApp extends StatelessWidget {
             const UpsideDownTextfieldPage(),
         TrogglePage.routeName: (context) => const TrogglePage(),
         JaimPaMagglePage.routeName: (context) => const JaimPaMagglePage(),
+        RadioButtonPage.routeName: (context) => const RadioButtonPage(),
       },
     );
   }
@@ -183,6 +185,20 @@ class _MyHomePageState extends State<MyHomePage> {
                   Navigator.of(context).pushNamed("/upsideDownTextField"),
               child: const Text(
                 "Upside down textfield",
+              ),
+            ),
+            const SizedBox(
+              height: 12,
+            ),
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(4)),
+                primary: Colors.grey,
+              ),
+              onPressed: () => Navigator.of(context).pushNamed("/radioButton"),
+              child: const Text(
+                "Radio button",
               ),
             ),
           ],
