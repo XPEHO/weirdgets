@@ -42,25 +42,31 @@ from the package authors, and more.
 
 By default you can't load http urls on iOS and macOS. To avoid this restriction you must edit your .plist and add:
 
+```
 <key>NSAppTransportSecurity</key>
 <dict>
     <key>NSAllowsArbitraryLoads</key>
     <true/>
 </dict>
+```
 
 ## macOS outgoing connections 
 
 By default, Flutter macOS apps don't allow outgoing connections, so you can't play audio streams from the internet.
 To avoid this problem, add these lines to the .entitlements files of your macOS app
 
+```
 <key>com.apple.security.network.client</key>
 <true/>
+```
 
 ## Android security requirements
 
 By default, you can't load http urls on android. To avoid this restriction you must add these lines to the AndroidManifest.xml file located in android/app/src/main/AndroidManifest.xml
 
+```
 <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:usesCleartextTraffic="true">
     </application>
+```
