@@ -23,6 +23,12 @@ class _RadioButtonState extends State<RadioButton> {
   String? _url;
 
   @override
+  void dispose() {
+    audioPlayer.stop();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     _url ??= widget.radios.values.first;
     return ListView.builder(
