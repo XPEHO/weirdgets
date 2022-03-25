@@ -26,8 +26,8 @@ class _ValidationsButtonPageState extends State<ValidationsButtonPage> {
               validationMessages: const [
                 "Confirm",
                 "Are you sure ?",
-                "Really sure ?",
-                "Really really sure ?",
+                "You should think about it again",
+                "Last chance !",
               ],
               onValidation: () => setState(() {
                 _shouldDisplayValidationMessage = true;
