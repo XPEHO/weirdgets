@@ -5,6 +5,7 @@ import 'package:example/view/radio_button_page/radio_button_page.dart';
 import 'package:example/view/reverted_textfield/reverted_textfield_page.dart';
 import 'package:example/view/upside_down_textfield/upside_down_textfield_page.dart';
 import 'package:example/view/troggle_page/troggle_page.dart';
+import 'package:example/view/validations_button/validations_button_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -42,6 +43,8 @@ class MyApp extends StatelessWidget {
         TrogglePage.routeName: (context) => const TrogglePage(),
         JaimPaMagglePage.routeName: (context) => const JaimPaMagglePage(),
         RadioButtonPage.routeName: (context) => const RadioButtonPage(),
+        ValidationsButtonPage.routeName: (context) =>
+            const ValidationsButtonPage(),
       },
     );
   }
@@ -199,6 +202,21 @@ class _MyHomePageState extends State<MyHomePage> {
               onPressed: () => Navigator.of(context).pushNamed("/radioButton"),
               child: const Text(
                 "Radio button",
+              ),
+            ),
+            const SizedBox(
+              height: 12,
+            ),
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(4)),
+                primary: Colors.grey,
+              ),
+              onPressed: () =>
+                  Navigator.of(context).pushNamed("/validationsButton"),
+              child: const Text(
+                "Validations button",
               ),
             ),
           ],
