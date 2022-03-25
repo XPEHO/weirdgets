@@ -14,11 +14,11 @@ class RadioButtonPage extends StatelessWidget {
       body: const Center(
         child: RadioButton(
           radios: {
-            "NRJ":
-                "http://scdn.nrjaudio.fm/adwz2/fr/30001/mp3_128.mp3?origine=fluxradios",
-            "Virgin": "https://ais-live.cloud-services.paris:8443/virgin.mp3",
             "Funradio":
-                "http://icecast.funradio.fr/fun-1-44-128?listen=webCwsBCggNCQgLDQUGBAcGBg"
+                "http://icecast.funradio.fr/fun-1-44-128?listen=webCwsBCggNCQgLDQUGBAcGBg",
+            "Virgin": "https://ais-live.cloud-services.paris:8443/virgin.mp3",
+            "NRJ":
+                "http://scdn.nrjaudio.fm/adwz2/fr/30001/mp3_128.mp3?origine=fluxradios"
           },
         ),
       ),

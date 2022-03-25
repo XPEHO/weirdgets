@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 /// You can specify the radio you want to listen with the corresponding url.
 class RadioButton extends StatefulWidget {
   /// The map of radio-url you want to listen to.
-  /// exemple : { "NRJ France": "http://scdn.nrjaudio.fm/adwz2/fr/30001/mp3_128.mp3?origine=fluxradios" }.
+  /// example : { "NRJ France": "http://scdn.nrjaudio.fm/adwz2/fr/30001/mp3_128.mp3?origine=fluxradios" }.
   /// You can find some radios urls on this site : http://fluxradios.blogspot.com.
   final Map<String, String> radios;
 
