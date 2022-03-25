@@ -44,9 +44,6 @@ class _ValidationsButtonState extends State<ValidationsButton> {
       },
       child: Text(
         _currentMessage,
-        style: const TextStyle(
-          fontWeight: FontWeight.w600,
-        ),
       ),
     );
   }
