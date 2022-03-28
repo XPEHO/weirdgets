@@ -1,4 +1,5 @@
 import 'package:example/view/diagonal_page/diagonal_page.dart';
+import 'package:example/view/first_april_fish_page/first_april_fish_page.dart';
 import 'package:example/view/jaimpamaggle_page/jaimpamaggle_page.dart';
 import 'package:example/view/multiggle_page/multiggle_page.dart';
 import 'package:example/view/radio_button_page/radio_button_page.dart';
@@ -41,6 +42,7 @@ class MyApp extends StatelessWidget {
         UpsideDownTextfieldPage.routeName: (context) =>
             const UpsideDownTextfieldPage(),
         TrogglePage.routeName: (context) => const TrogglePage(),
+        FirstAprilFishPage.routeName: (context) => const FirstAprilFishPage(),
         JaimPaMagglePage.routeName: (context) => const JaimPaMagglePage(),
         RadioButtonPage.routeName: (context) => const RadioButtonPage(),
         ValidationsButtonPage.routeName: (context) =>
@@ -152,6 +154,24 @@ class _MyHomePageState extends State<MyHomePage> {
                   Navigator.of(context).pushNamed("/jaim_pa_maggle"),
               child: const Text(
                 "JaimPaMaggle",
+                style: TextStyle(
+                  fontSize: 12,
+                ),
+              ),
+            ),
+            const SizedBox(
+              height: 12,
+            ),
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(4)),
+                primary: Colors.grey,
+              ),
+              onPressed: () =>
+                  Navigator.of(context).pushNamed("/first_april_fish"),
+              child: const Text(
+                "FirstAprilFish",
                 style: TextStyle(
                   fontSize: 12,
                 ),
