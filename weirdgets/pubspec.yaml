@@ -1,7 +1,10 @@
 name: weirdgets
-description: A new Flutter package project.
+description: A wierd Flutter widgets package mad by XPEHO mobile.
 version: 0.0.1
 homepage:
+repository: https://github.com/XPEHO/weirdgets
+
+#publish_to: none
 
 environment:
   sdk: ">=2.16.1 <3.0.0"

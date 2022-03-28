@@ -36,6 +36,9 @@ class _ValidationsButtonState extends State<ValidationsButton> {
       onPressed: () {
         if (_index == widget.validationMessages.length - 1) {
           widget.onValidation();
+          setState(() {
+            _index = 0;
+          });
         } else {
           setState(() {
             _index++;

@@ -24,7 +24,7 @@ extension TrogglePositionConverter on int {
 }
 
 /// Allows to listen when the position of the Troggle changes.
-typedef OnPositionChanged = Function(TrogglePosition);
+typedef OnTrogglePositionChanged = Function(TrogglePosition);
 
 /// The Troggle widget gives the possibility to choose between 3 positions: yes, no or maybe.
 /// Can be very useful if you are not sure about the answer ;-)
@@ -39,7 +39,7 @@ class Troggle extends StatefulWidget {
   final int quarterTurns;
 
   /// Called when the position of the Troggle changes.
-  final OnPositionChanged onPositionChanged;
+  final OnTrogglePositionChanged onPositionChanged;
 
   const Troggle({
     Key? key,
