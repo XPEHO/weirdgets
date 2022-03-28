@@ -25,8 +25,14 @@ class _ValidationsButtonPageState extends State<ValidationsButtonPage> {
             ValidationsButton(
               validationMessages: const [
                 "Confirm",
+                "Is it a miss click ?",
                 "Are you sure ?",
                 "You should think about it again",
+                "No, please don't do it",
+                "ok, but maybe you should think about it again",
+                "If you confirm, cancel will not be available",
+                "Once again",
+                "So close",
                 "Last chance !",
               ],
               onValidation: () => setState(() {

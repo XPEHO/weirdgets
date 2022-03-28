@@ -46,6 +46,19 @@ class _RadioButtonState extends State<RadioButton> {
               });
               audioPlayer.play(widget.radios.values.elementAt(index),
                   isLocal: false);
+              ScaffoldMessenger.of(context).showSnackBar(
+                const SnackBar(
+                  content: Text('Play'),
+                ),
+              );
+              Future.delayed(const Duration(seconds: 10), () {
+                audioPlayer.stop();
+                ScaffoldMessenger.of(context).showSnackBar(
+                  const SnackBar(
+                    content: Text('Stop'),
+                  ),
+                );
+              });
             },
           ),
         );

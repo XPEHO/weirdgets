@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 /// Allows to listen when the position of the multiggle changes.
-typedef OnPositionChanged = Function(int);
+typedef OnMultigglePositionChanged = Function(int);
 
 /// Allows to programmatically change the position of the multiggle.
 typedef OnSetPosition = Function(int);
@@ -34,7 +34,7 @@ class Multiggle extends StatefulWidget {
   final int initialPosition;
 
   /// Called when the position of the multiggle changes.
-  final OnPositionChanged? onPositionChanged;
+  final OnMultigglePositionChanged? onPositionChanged;
 
   /// Controller used to pilot the multiggle (optional)
   final MultiggleController? controller;

@@ -14,11 +14,9 @@ class RadioButtonPage extends StatelessWidget {
       body: const Center(
         child: RadioButton(
           radios: {
-            "Funradio":
-                "http://icecast.funradio.fr/fun-1-44-128?listen=webCwsBCggNCQgLDQUGBAcGBg",
-            "Virgin": "https://ais-live.cloud-services.paris:8443/virgin.mp3",
-            "NRJ":
-                "http://scdn.nrjaudio.fm/adwz2/fr/30001/mp3_128.mp3?origine=fluxradios"
+            "Dogmazic": "https://radio.dogmazic.net:8000/stream.ogg",
+            "Radio RSR": "http://listen.radioking.com/radio/411/stream/1670",
+            "Libre @ Toi": "http://vdl.stream-lat.org:8000/voixdulat_ogg",
           },
         ),
       ),

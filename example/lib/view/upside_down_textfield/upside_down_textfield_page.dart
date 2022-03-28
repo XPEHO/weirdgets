@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:weirdgets/mirror_textfield/upside_down_textfield.dart';
+import 'package:weirdgets/upsidedown_textfield/upside_down_textfield.dart';
 
 class UpsideDownTextfieldPage extends StatelessWidget {
   static const routeName = "/upsideDownTextField";
