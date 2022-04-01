@@ -1,3 +1,7 @@
+## 0.0.2
+
+* Fix README images
+
 ## 0.0.1
 
-* TODO: Describe initial release.
+* Publish first version
