@@ -1,7 +1,7 @@
 name: weirdgets
 description: A wierd Flutter widgets package mad by XPEHO mobile.
-version: 0.0.1
-homepage:
+version: 0.0.2
+homepage: https://weirdgets-36c4b.web.app/#/
 repository: https://github.com/XPEHO/weirdgets
 
 #publish_to: none

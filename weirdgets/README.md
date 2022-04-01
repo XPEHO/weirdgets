@@ -23,7 +23,7 @@ Borred to always organize your widgets with rows and columns ?
 
 Try the Diagonal ! A new funny way to show a widget list.
 
-![Diagonal](doc/images/diagonal.gif)
+![Diagonal](https://github.com/XPEHO/weirdgets/blob/main/weirdgets/doc/images/diagonal.gif?raw=true)
 
 ```dart
 @override
@@ -40,11 +40,11 @@ Widget build(BuildContext context) {
 
 ## Multiggle
 
-2 positions are not enought ? Good news ! We made a weirdget for you.
+2 positions are not enough ? Good news ! We made a weirdget for you.
 
 Try the Multiggle, a toggle but with more than 2 positions.
 
-![multiggle](doc/images/multiggle.gif)
+![multiggle](https://github.com/XPEHO/weirdgets/blob/main/weirdgets/doc/images/multiggle.gif?raw=true)
 
 ```dart
 class MyWidget extends StatelessWidget {
@@ -91,7 +91,7 @@ Sometimes we would like to say maybe instead of yes or no. That's why we created
 
 The Troggle is a Toggle with a third position. Then, you can choose between, 'yes', 'no' and 'maybe'. Feel free to tell that you're not decided !
 
-![troggle](doc/images/troggle.gif)
+![troggle](https://github.com/XPEHO/weirdgets/blob/main/weirdgets/doc/images/troggle.gif?raw=true)
 
 ```dart
 @override
@@ -113,7 +113,7 @@ Tired of posing ? Just add this widget and... snap !
 
 Oh ! A picture appears... Enjoy your better selfie ! I guess.. or not...
 
-![jaimpamaggle](doc/images/jaimpamaggle.gif)
+![jaimpamaggle](https://github.com/XPEHO/weirdgets/blob/main/weirdgets/doc/images/jaimpamaggle.gif?raw=true)
 
 ```dart
 @override
@@ -130,7 +130,7 @@ Widget build(BuildContext context) {
 
 Accessibility is a real concern. That's why we made the RevertedTextField for everyone who writes from right to left. Because you should be able to create Flutter apps too, even if you use the alphabet with a mirror glass.
 
-![revertedtextfield](doc/images/revertedtextfield.gif)
+![revertedtextfield](https://github.com/XPEHO/weirdgets/blob/main/weirdgets/doc/images/revertedtextfield.gif?raw=true)
 
 ```dart
 @override
@@ -143,7 +143,7 @@ Widget build(BuildContext context) {
 
 Again, we want everyone can use Flutter. So we also thought about our developper friends who works upside down in the south hemisphere. We made the UpsideDownTextField for you ! You will now be able to write text without neck pain or torticollis
 
-![upsieddowntextfield](doc/images/upsidedowntextfield.gif)
+![upsieddowntextfield](https://github.com/XPEHO/weirdgets/blob/main/weirdgets/doc/images/upsidedowntextfield.gif?raw=true)
 
 ```dart
 @override
@@ -175,7 +175,7 @@ Widget build(BuildContext context) {
 Afraid about the miss click ? Use the ValidationsButton !
 This widget provides you a way to have multiple confirmations to prevent from a choice that user is not really making
 
-![validationsbutton](doc/images/validationsbutton.gif)
+![validationsbutton](https://github.com/XPEHO/weirdgets/blob/main/weirdgets/doc/images/validationsbutton.gif?raw=true)
 
 ```dart
 @override
